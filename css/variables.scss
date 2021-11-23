@@ -1,0 +1,6 @@
+$hello: '1rem';
+$whatever: '2rem';
+
+.whatever {
+	margin: $hello;
+}
