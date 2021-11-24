@@ -1,5 +1,6 @@
 {
-	"name": "svelte-library",
+	"name": "@edelman/svelte-library-template",
+	"description": "A template for building sveltejs libs",
 	"version": "0.0.1",
 	"svelte": "index.js",
 	"type": "module",
@@ -39,9 +40,11 @@
 		"build-storybook": "build-storybook",
 		"test": "NODE_OPTIONS=--experimental-vm-modules jest src --config jest.config.json",
 		"test:watch": "pnpm run test -- --watch",
-		"test:coverage": "pnpm run test -- --coverage"
+		"test:coverage": "pnpm run test -- --coverage",
+		"readme": "readme generate -i blueprint.md -c blueprint.json"
 	},
 	"devDependencies": {
+		"@appnest/readme": "^1.2.7",
 		"@babel/core": "^7.16.0",
 		"@storybook/addon-a11y": "^6.3.12",
 		"@storybook/addon-actions": "^6.3.12",
